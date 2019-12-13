@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dist="http://schemas.android.com/apk/distribution"
+    package="info.androidhive.lrtmobile">
+
+    <dist:module dist:instant="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/lrtt"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/lrtt"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".jadwallrt"
+            android:label="Jadwal LRT"></activity>
+        <activity
+            android:name=".informasi"
+            android:label="Informasi" />
+        <activity android:name=".gaya_baru" />
+        <activity
+            android:name=".daftarstasiun"
+            android:label="Daftar Stasiun" />
+        <activity
+            android:name=".pesantiket"
+            android:label="Pesan Tiket" />
+        <activity
+            android:name=".menu"
+            android:label="Menu" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
